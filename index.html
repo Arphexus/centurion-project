@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Arphexus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="style/css/css_index.css">
+</head>
+<body>
+<div id="splash-screen">
+    <img src="imgs/aplogo2.png" alt="Logo Arphexus" class="splash-logo">
+    </div>
+    <!-- Botão "voltar ao topo" -->
+    <a href="#" class="scroll-top" id="scrollTopBtn">&#8679;</a>
+
+    <div class="container">
+        <header class="header">
+            <div class="logoheader">
+                <a href="inicio.html">
+                    <img src="imgs/aplogo3.png" alt="Logo Arphexus">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="nosprojeto.html">Nossos Projetos</a></li>
+                    <li><a href="ctt.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>Bem-vindo à <span class="destaque">Arphexus</span></h1>
+                <p><span id="typed-text"></span></p>
+                <a href="nosprojeto.html" class="btn">Conheça nossos projetos</a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Arphexus Team. Todos os direitos reservados.</p>
+                <nav class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="nosprojeto.html">Nossos Projetos</a></li>
+                        <li><a href="ctt.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.querySelector('.nav');
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        const typed = new Typed("#typed-text", {
+            strings: ["Inovação em cada linha de código.", "Soluções criativas para problemas complexos.", "Tecnologia com propósito."],
+            typeSpeed: 40,
+            backSpeed: 25,
+            backDelay: 1200,
+            loop: true
+        });
+        const scrollBtn = document.getElementById("scrollTopBtn");
+        window.onscroll = function () {
+            scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        };
+	window.addEventListener('load', () => {
+        const splash = document.getElementById('splash-screen');
+        setTimeout(() => {
+            splash.classList.add('fade-out');
+            setTimeout(() => splash.style. display = 'none', 1000);
+        }, 500);
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Arphexus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style/css/sobre_css.css'>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logoheader">
+                <a href="inicio.html">
+                    <img src="imgs/aplogo3.png">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="nosprojeto.html">Nossos Projetos</a></li>
+                    <li><a href="ctt.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+
+        <main class="conteudo">
+		<section class="nos">
+  <h2>Quem somos?</h2>
+  <div class="cards-container">
+
+    <!-- Card 1 -->
+    <div class="card reveal">
+      <img src="imgs/felype.png" alt="Felype">
+      <div class="card-content">
+        <h3>Felype</h3>
+        <p>Designer, responsável pelo protótipo inicial do projeto Centurion e desenvolvimento dos aspectos visuais. Desenvolveu parte do Projeto Centurion.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card reveal">
+      <img src="imgs/arthur.png" alt="Arthur">
+      <div class="card-content">
+        <h3>Arthur</h3>
+        <p>Designer e programador FullStack, desenvolveu o site da empresa Arphexus e do projeto Centurion, também desenvolveu parte do Projeto Centurion.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card reveal">
+      <img src="imgs/pedro.jpg" alt="Pedro">
+      <div class="card-content">
+        <h3>Pedro</h3>
+        <p>Designer e programador front-end, contribuiu com o marketing e desenvolveu parte do Projeto Centurion.</p>
+      </div>
+    </div>
+  </div>
+  
+</section>
+        </main>
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Arphexus Team. Todos os direitos reservados.</p>
+                <nav class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="nosprojeto.html">Nossos Projetos</a></li>
+                        <li><a href="ctt.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.querySelector('.nav');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+
+    reveals.forEach(el => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const elementVisible = 100;
+
+      if (elementTop < windowHeight - elementVisible) {
+        el.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+    </script>
+</body>
+</html>

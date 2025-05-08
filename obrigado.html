@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mensagem Enviada | Arphexus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #292929;
+            color: #fff0ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .check-icon {
+            font-size: 64px;
+            color: #7f4ca5;
+            animation: pulse 1s ease infinite alternate;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+                opacity: 1;
+            }
+            to {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+        }
+
+        .content {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: #fff0ffcc;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 24px;
+            background-color: #7f4ca5;
+            color: #fff0ff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #4b1c71;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <div class="check-icon">✔️</div>
+        <h1>Mensagem enviada com sucesso!</h1>
+        <p>Agradecemos pelo contato. Em breve entraremos em resposta.</p>
+        <a href="inicio.html">Voltar para o Início</a>
+    </div>
+
+</body>
+</html>
