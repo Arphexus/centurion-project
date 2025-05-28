@@ -206,6 +206,11 @@ html, body {
   transform: translateY(-10px);
 }
 
+.cardreveal2 {
+width: 50%;
+height: auto;
+}
+
 .card img {
   width: 50%;
   height: 153px;
