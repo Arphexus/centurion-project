@@ -206,15 +206,15 @@ html, body {
   transform: translateY(-10px);
 }
 
-.cardreveal2 {
-width: 50%;
-height: auto;
-}
-
 .card img {
   width: 50%;
   height: 153px;
   object-fit: cover;
+}
+
+#card-centurion {
+    width: 20px;
+    height: 20px;
 }
 
 .card-content {
