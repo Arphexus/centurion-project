@@ -212,11 +212,6 @@ html, body {
   object-fit: cover;
 }
 
-#card-centurion {
-    width: 100px;
-    height: 100px;
-}
-
 .card-content {
   padding: 20px;
 }
