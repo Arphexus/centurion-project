@@ -210,10 +210,10 @@ html, body {
 }
 
 .card img {
-  width: 50%;
-  height: 153px;
+  width: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
-  border-radius: 3px, 3px, 3px, 3px;
 }
 
 .card-content {
