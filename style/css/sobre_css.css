@@ -217,6 +217,10 @@ html, body {
   border-top-right-radius: 10px;
 }
 
+#pedro {
+    object-position: center;
+}
+
 .card-content {
   padding: 20px;
 }
