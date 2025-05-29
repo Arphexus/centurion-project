@@ -213,6 +213,7 @@ html, body {
   width: 50%;
   height: 153px;
   object-fit: cover;
+  border-radius: 3px, 3px, 3px, 3px;
 }
 
 .card-content {
