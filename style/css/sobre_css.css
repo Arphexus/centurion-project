@@ -217,8 +217,8 @@ html, body {
   border-top-right-radius: 10px;
 }
 
-#pedro {
-    object-position: center;
+.cards-container .card:nth-child(3) img {
+  object-position: center;
 }
 
 .card-content {
