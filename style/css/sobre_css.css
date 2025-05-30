@@ -237,6 +237,15 @@ html, body {
   color: #fff0ffcc;
 }
 
+.cards-container .card:nth-child(1) img {
+  object-position: top;
+}
+
+.cards-container .card:nth-child(3) img {
+  object-position: center;
+}
+
+
 .btn {
   display: inline-block;
   background-color: #7f4ca5;
