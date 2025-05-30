@@ -237,14 +237,13 @@ html, body {
   color: #fff0ffcc;
 }
 
-.cards-container .card:nth-child(1) img {
+#img-felype {
   object-position: top;
 }
 
-.cards-container .card:nth-child(3) img {
+#img-pedro {
   object-position: center;
 }
-
 
 .btn {
   display: inline-block;
