@@ -214,7 +214,7 @@ html, body {
 
 #img-centurion{
     width: 50%;
-    height: 145px;
+    height: auto;
     object-fit: cover;
 }
 
